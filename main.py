@@ -10,7 +10,7 @@ def createModel():
     if os.path.exists(dirPath+"/face_mask_detector.model"):
         print("Model already Exists")
     else:
-        os.system(f'cmd /k "{pythonEnv} {dirPath}/train_mask_detector.py --dataset dataset"')
+        os.system(f'cmd /k "{pythonEnv} {dirPath}/train_detector.py --dataset dataset"')
 
 
 def pickImage():
