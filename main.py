@@ -15,6 +15,7 @@ def createModel():
 
 def pickImage():
     filename = askopenfilename()  # show an "Open" dialog box and return the path to the selected file
+    window.destroy()
     os.system(f'cmd /k "{pythonEnv} {dirPath}/detect_mask_fromImage.py --image {filename}"')
 
 
